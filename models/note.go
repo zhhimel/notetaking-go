@@ -6,7 +6,7 @@ import (
 var DB *gorm.DB
 type Note struct{
 	gorm.Model
-	Title string `gorm:""json:"title"`
+	Title string `json:"title"`
 	Details string `json:"details"`
 }
 func init(){
